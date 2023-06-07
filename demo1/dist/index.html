@@ -42,6 +42,39 @@ License: For each use you must have a valid license purchased only from above li
 	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<!--end::Global Stylesheets Bundle-->
+
+	<style>
+		.carousel-control-prev,
+		.carousel-control-next {
+			background-color: transparent;
+			width: 50px;
+		}
+	
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+			background-color: transparent;
+			background-size: 100%, 100%;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+		}
+	
+		.carousel-control-prev-icon:before {
+			content: '';
+			left: 50%;
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23secondary' viewBox='0 0 8 8'%3E%3Cpath d='M3.25 0l-3.25 3.25 3.25 3.25 0.75-0.75-2.5-2.5 2.5-2.5z'/%3E%3C/svg%3E");
+		}
+	
+		.carousel-control-next-icon:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23secondary' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0l2.5 2.5-2.5 2.5-0.75-0.75 3.25-3.25-3.25-3.25z'/%3E%3C/svg%3E");
+		}
+	</style>
+	
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -1043,26 +1076,22 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu"
 								data-kt-menu="true" data-kt-menu-expand="false">
 								<!--begin:Menu item-->
-								<a href="index.html" class="menu-item py-3 here show menu-accordion">
+								<a href="index.html" class="menu-item py-3 here show menu-accordion bg-info">
 									<!--begin:Menu link-->
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
 											<span class="svg-icon svg-icon-2">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-													xmlns="http://www.w3.org/2000/svg">
-													<rect x="2" y="2" width="9" height="9" rx="2" fill="currentColor" />
-													<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2"
-														fill="currentColor" />
-													<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2"
-														fill="currentColor" />
-													<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2"
-														fill="currentColor" />
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect x="2" y="2" width="9" height="9" rx="2" fill="white" />
+													<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="white" />
+													<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="white" />
+													<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="white" />
 												</svg>
 											</span>
 											<!--end::Svg Icon-->
 										</span>
-										<span class="menu-title">Dashboards</span>
+										<span class="menu-title text-white">Dashboards</span>
 									</span>
 									<!--end:Menu link-->
 								</a>
